@@ -14,6 +14,7 @@ My personal website is a one-page app that allows users to explore information a
 * Flask
 * Javascript
 * jQuery
+* Jinja
 * HTML
 * CSS
 * Bootstrap
