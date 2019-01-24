@@ -178,7 +178,7 @@ a:focus {
 		width: 100%;
 		height: auto;
 		position: relative;
-		padding-top: 35px;
+		padding-top: 33px;
 }
 
 #intro-div{
@@ -223,7 +223,6 @@ a:focus {
 				font-size: 111px;
 				color: #c0dfd9;
 		}
-
 
 .intro .intro-body .intro-text #engineer{
 				font-size: 22px;
