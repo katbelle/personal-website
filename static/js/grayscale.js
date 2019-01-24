@@ -32,8 +32,8 @@ $('.navbar-collapse ul li a').click(function() {
 var bio2Width = $("#bio-2").width();
 $("#bio").width(bio2Width-100);
 
-var dobsWidth = $(".brand-heading").width();
-$("#dobs").width(dobsWidth);
+var kyattoWidth = $(".brand-heading").width();
+$("#kyatto").width(kyattoWidth);
 
-var headerMargin = $("#dobs").height()/5;
+var headerMargin = $("#kyatto").height()/5;
 $(".brand-heading").css("margin-top",headerMargin);
