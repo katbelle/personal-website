@@ -6,7 +6,7 @@ My personal website is a one-page app that allows users to explore information a
 
 # Preview
 
-![Preview](/static/gif/boba_intro.gif)
+![Preview](/static/gif/kats_website.gif)
 
 # Tech Stack
 
