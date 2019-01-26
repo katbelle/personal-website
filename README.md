@@ -18,3 +18,28 @@ My personal website is a one-page app that allows users to explore information a
 * HTML
 * CSS
 * Bootstrap
+
+# Deployment
+Until a code deployment manager is added, here are the manual steps:
+
+## 1. ssh into production server
+```
+sshpersonalwebsite
+```
+
+## 2. pull latest
+```
+cd personal-website
+git pull
+```
+
+## 3. if new dependencies, install them:
+```
+source env/bin/activate
+pip3 install -r requirements.txt
+```
+
+## 4. restart service
+```
+sudo systemctl restart flask
+```
