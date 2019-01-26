@@ -2,9 +2,9 @@
 
 # About
 
-katbelle.com
+##katbelle.com
 
-My personal website is a one-page app that allows users to explore information about me and my coding life. 
+My personal website is a one-page app that allows users to explore information about me and my coding life.
 
 # Preview
 
