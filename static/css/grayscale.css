@@ -116,6 +116,7 @@ a:focus {
 		color: #000;
 }
 
+
 .navbar-custom .nav li a {
 		-webkit-transition: background .3s ease-in-out;
 		-moz-transition: background .3s ease-in-out;
@@ -161,6 +162,12 @@ a:focus {
 				padding: 0;
 				border-bottom: 1px solid rgba(255,255,255,.3);
 				background: #b3c2bf;
+		}
+}
+
+@media(max-width: 768px) {
+		.navbar-custom a {
+				color: #fff;
 		}
 }
 
