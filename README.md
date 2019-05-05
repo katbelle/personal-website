@@ -24,24 +24,42 @@ My personal website is a one-page app that allows users to explore information a
 # Deployment
 Until a code deployment manager is added, here are the manual steps:
 
-## 1. ssh into production server
+### 1. ssh into production server
 ```
 sshpersonalwebsite
 ```
 
-## 2. pull latest
+### 2. pull latest
 ```
 cd personal-website
 git pull
 ```
 
-## 3. if new dependencies, install them:
+### 3. if new dependencies, install them:
 ```
-source env/bin/activate
-pip3 install -r requirements.txt
+pipenv install
 ```
 
-## 4. restart service
+### 4. restart service
 ```
 sudo systemctl restart flask
 ```
+
+# Development
+This flask server runs on port 8080, make sure that port is not in use.
+
+### 1. install dependencies
+```
+pipenv install
+```
+
+### 2. activate pipenv
+```
+pipenv shell
+```
+
+### 3. run server
+```
+python server.py
+```
+

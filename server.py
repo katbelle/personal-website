@@ -30,8 +30,8 @@ def render_resume_page():
 	return render_template("resume.html")
 
 if __name__ == "__main__":
-
-	PORT = int(os.environ.get("PORT", 5000))
+	PORT = int(os.environ.get("PORT", 8080))
+	print('USING PORT: ', PORT)
 	
 	#DEBUG = "NO_DEBUG" not in os.environ
 	#app.run(debug=DEBUG, host="0.0.0.0", port=PORT)
