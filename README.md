@@ -29,6 +29,11 @@ Until a code deployment manager is added, here are the manual steps:
 sshpersonalwebsite
 ```
 
+### 1.5. (Server Setup) Ensure pipenv is installed on the server
+```
+pip3 install pipenv
+```
+
 ### 2. pull latest
 ```
 cd personal-website
