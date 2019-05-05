@@ -1,4 +1,4 @@
-# [Kat Belle Hartling's personal website](http://www.katbellehartling.com)
+# [Kat Belle Hartling's personal website](http://www.katbelle.com)
 
 # About
 
@@ -24,14 +24,11 @@ My personal website is a one-page app that allows users to explore information a
 # Deployment
 Until a code deployment manager is added, here are the manual steps:
 
+## Manual Deployment
+
 ### 1. ssh into production server
 ```
 sshpersonalwebsite
-```
-
-### 1.5. (Server Setup) Ensure pipenv is installed on the server
-```
-pip3 install pipenv
 ```
 
 ### 2. pull latest

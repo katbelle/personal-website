@@ -10,8 +10,7 @@ Environment="LANGUAGE=en_US.UTF-8:"
 WorkingDirectory=/home/ubuntu/personal-website/
 ExecStart=/bin/bash -c "source secrets.sh\
 && pipenv install\
-&& pipenv shell\
-&& python3 server.py &>> flask.log"
+&& pipenv run python3 server.py &>> flask.log"
 Restart=always
 
 [Install]
