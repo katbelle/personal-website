@@ -21,9 +21,7 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY", "ABC123")
 # This is horrible. Fix this so that, instead, it raises an error.
 app.jinja_env.undefined = StrictUndefined
 
-def send_dd_event(title, text=None):
-	text = text and f"[personal-website]: {text}"
-	api.Event.create(title=title, text=text, tags=['application:web'])
+
 
 @app.route("/")
 def home():
@@ -47,7 +45,11 @@ if __name__ == "__main__":
 	PORT = int(os.environ.get("PORT", 8080))
 	
 	# Send a startup event to Datadog.
-	send_dd_event('server-startup', 'server booting up')
+	title = 'Server-bootup'
+	text = '[personal-website]: server booting up'
+	tags = ['application:web']
+
+	api.Event.create(title=title, text=text, tags=tags)
 	
 	#DEBUG = "NO_DEBUG" not in os.environ
 	#app.run(debug=DEBUG, host="0.0.0.0", port=PORT)
