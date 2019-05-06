@@ -1,0 +1,22 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+     - "8080:8080"
+    volumes:
+     - .:/app
+    depends_on:
+     - datadog
+
+  datadog:
+    build: datadog
+    ports:
+     - "8126:8126"
+    environment:
+     - DD_API_KEY=8e2afe5aba8c5cba788e3e46722feaca
+     - DD_APM_ENABLED=true
+    volumes:
+     - /var/run/docker.sock:/var/run/docker.sock
+     - /proc/:/host/proc/:ro
+     - /sys/fs/cgroup:/host/sys/fs/cgroup:ro
