@@ -7,6 +7,8 @@ verify_ssl = true
 
 [packages]
 Flask = ">=1.0.2"
+ddtrace = "*"
+datadog = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7.3"
